@@ -312,4 +312,13 @@ public class FBAppEventsLoggerModule extends ReactContextBaseJavaModule {
     public void setPushNotificationsRegistrationId(String registrationId) {
         AppEventsLogger.setPushNotificationsRegistrationId(registrationId);
     }
+
+    /**
+     * Set debug event mode
+    */
+    @ReactMethod
+    public static void setDebug(boolean isDebug) {
+        FacebookSdk.setIsDebugEnabled(isDebug);
+        FacebookSdk.addLoggingBehavior(LoggingBehavior.APP_EVENTS);
+    }
 }

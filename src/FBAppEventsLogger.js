@@ -182,4 +182,12 @@ module.exports = {
   setPushNotificationsRegistrationId(registrationId: string) {
     AppEventsLogger.setPushNotificationsRegistrationId(registrationId);
   },
+
+
+  /**
+   * Set events debug
+   */
+  setDebug(debugMode: boolean) {
+    AppEventsLogger.setDebug(debugMode);
+  },
 };
