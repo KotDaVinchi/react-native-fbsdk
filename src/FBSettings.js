@@ -52,4 +52,10 @@ module.exports = {
     }
     Settings.setDataProcessingOptions(options, country, state);
   },
+  /**
+   * set auto logging appevents enabling
+   */
+  setAutoLogAppEventsEnabled(enabled: boolean) {
+    Settings.setAutoLogAppEventsEnabled(enabled);
+  },
 };
