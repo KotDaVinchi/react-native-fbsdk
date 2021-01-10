@@ -45,7 +45,7 @@ RCT_EXPORT_METHOD(setDataProcessingOptions:(nullable NSStringArray *)options cou
 
 RCT_EXPORT_METHOD(setAutoLogAppEventsEnabled:(BOOL)enable)
 {
-  [FBSDKSettings setAdvertiserIDCollectionEnabled:enable];
+  [FBSDKSettings setAutoLogAppEventsEnabled:enable];
 }
 
 @end
